@@ -1,4 +1,4 @@
-#define TEST_MAIN
+#define CTEST_MAIN
 
 #include <board.h>
 #include <check_str.h>
