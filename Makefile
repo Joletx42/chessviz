@@ -7,7 +7,7 @@ CFLAGS  = -Wall -Werror -std=c99
 default: bin/board
    
 test: ./bin/board-test
-          ./bin/board-test
+	./bin/board-test
   
 ./bin/board: ./build/main.o ./build/board.o ./build/check_str.o bin test
 		$(CC) $(CFLAGS) -o ./bin/board ./build/main.o ./build/board.o ./build/check_str.o -lm
