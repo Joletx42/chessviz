@@ -31,7 +31,7 @@ int check_strokes(int* pozition, char** container)
         break;
     case 'r': // Ладья
         if ((pozition[1] == pozition[3] && pozition[0] != pozition[2])
-            && P ROF) {
+            && PROF) {
             return 0;
         } else if (
                 (pozition[1] != pozition[3] && pozition[0] == pozition[2])
@@ -60,7 +60,7 @@ int check_strokes(int* pozition, char** container)
         break;
     case 'q': // Ферзь
         if ((pow(pozition[2] - pozition[0], 2)
-             == pow(pozition[3] - pozitio n[1], 2))
+             == pow(pozition[3] - pozition[1], 2))
             || (pozition[1] == pozition[3] && pozition[0] != pozition[2])
             || (pozition[1] != pozition[3] && pozition[0] == pozition[2])) {
             if (PROF) {
